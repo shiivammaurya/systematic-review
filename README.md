@@ -1,7 +1,8 @@
-# Continual learning for network intrusion detection: replay, regularization and retraining
+# Continual Learning for Network Intrusion Detection: A Structured Review of Replay, Regularization, Distillation and Expansion (experiments)
 
-Code and results for the paper *"Continual Learning for Network Intrusion Detection: A Structured Review of Replay,
-Regularization, Distillation and Expansion"* (experiment section). Pure NumPy, no GPU.
+Code and results for the experiment section (Section VI) of the paper above, by Shivam, Navjot Kaur and Geetika Sharma
+(Chandigarh University). The review itself (search queries, screening records) is described in the paper; this repository holds
+the experiments that test its main finding on NSL-KDD and CICIoT2023. Pure NumPy, no GPU.
 
 ## What is compared
 - **Datasets:** NSL-KDD (5 classes, 4 stages, official train/test files) and CICIoT2023 (34 classes, 5 stages; first 5,000 rows of each class file).
@@ -40,4 +41,18 @@ the Fisher subsample; on CICIoT2023 they also change the stratified 70/30 split.
 - Two datasets, one class order each, two small models.
 
 ## Citation
-Please cite the paper (reference to be added) and the datasets: Tavallaee et al. (NSL-KDD, 2009); Neto et al., Sensors 23(13):5941 (CICIoT2023, 2023).
+If you use this code, please cite the paper:
+
+```bibtex
+@unpublished{shivam2026clnids,
+  title  = {Continual Learning for Network Intrusion Detection: A Structured Review of Replay,
+            Regularization, Distillation and Expansion},
+  author = {Shivam and Kaur, Navjot and Sharma, Geetika},
+  year   = {2026},
+  note   = {Manuscript under review; code at https://github.com/shiivammaurya/systematic-review}
+}
+```
+Update the entry with the venue and DOI once the paper is published.
+
+Please also cite the datasets: M. Tavallaee et al., "A detailed analysis of the KDD CUP 99 data set," IEEE CISDA, 2009 (NSL-KDD);
+E. C. P. Neto et al., "CICIoT2023: A real-time dataset and benchmark for large-scale attacks in IoT environment," Sensors 23(13):5941, 2023.
